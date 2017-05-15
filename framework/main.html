@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Shawn Moran's Portfolio</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+
+	<script src="../bootstrap/js/jquery-3.1.1.min.js" defer></script>
+	<script src="../bootstrap/js/bootstrap.min.js" defer></script>
+</head>
+<body>
+
+	<!-- This is the grid and container that structures the entirety of the page -->
+<div class="grid">
+	<section class="container center-block">
+
+	<!-- This is my page header that includes a logo, my name, and title -->
+		<header class="row">
+			<figure class="col-md-6">
+				<img class="title-logo img-responsive" src="img/udacity-logo.jpg" alt="Udacity logo">
+			</figure>
+
+			<section class="col-md-6 text-right text-uppercase">
+				<h1 class="text-thin title-super">shawn moran</h1>
+				<h3 class="text-bold">front-end ninja</h3>
+			</section>
+		</header>
+
+	<!-- This is the horizontal rule that divides my header from my main image -->
+		<section class="row center-block">
+			<figure class="col-md-12">
+				<hr class="horizontal-rule-border">
+			</figure>
+		</section>
+
+	<!-- This is my navigation bar -->
+		<nav class="row center-block">
+			<ul class="col-md-12">
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="https://github.com/srdmdev8/UdacityProjects/tree/master/Project%20Submissions">Projects</a></li>
+			</ul>
+		</nav>
+
+	<!-- This is my main image -->
+		<section class="row center-block">
+			<figure class="col-md-12">
+				<img src="img/html5.jpg" alt="HTML5 image" class="img-responsive">
+			</figure>
+		</section>
+
+	<!-- This is the horizontal rule that divides my main image from my featured work section-->
+		<section class="row center-block">
+			<figure class="col-md-12">
+				<hr class="horizontal-rule-border horizontal-rule-border2">
+			</figure>
+		</section>
+
+	<!-- This is my featured work title row -->
+		<header class="row center-block">
+			<section class="col-md-12 head-color">
+				<h2 class="text-muted text-padding text-bold text-capitalize">featured work</h2>
+			</section>
+		</header>
+
+	<!-- This is my featured work section which includes modals for each project -->
+		<section class="row center-block text-center row-color">
+			<article class="col-md-4 article-padding mockup-margin">
+				<img src="img/mockup.jpg" alt="Mockup image" class="img-responsive image-margin" data-toggle="modal" data-target="#project1">
+				<h3 class="text-uppercase text-bold">article mockup</h3>
+				<p><a class="text-wrap" href="https://github.com/srdmdev8/Mockup-To-Article">https://github.com/srdmdev8/Mockup-To-Article</a></p>
+			</article>
+
+			<article class="col-md-4 article-padding">
+				<img src="img/cheetah.jpg" alt="Cheetah" class="img-responsive image-margin" data-toggle="modal" data-target="#project2">
+				<h3 class="text-uppercase text-bold">animal trading cards</h3>
+				<p><a class="text-wrap" href="https://github.com/srdmdev8/Animal-Trading-Cards">https://github.com/srdmdev8/Animal-Trading-Cards</a></p>
+			</article>
+
+			<article class="col-md-4 article-padding">
+				<img src="img/DTV photo 2.jpg" alt="Shawn image" class="img-responsive image-margin" data-toggle="modal" data-target="#project3">
+				<h3 class="text-uppercase text-bold">my resume</h3>
+				<p><a class="text-wrap" href="https://github.com/srdmdev8/Resume">https://github.com/srdmdev8/Resume</a></p>
+			</article>
+		</section>
+	</section>
+</div>
+
+	<!-- Modal 1 -->
+		<div class="modal fade text-center" id="project1" tabindex="-1" role="dialog" aria-labelledby="ArticleMockup" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-capitalize" id="ArticleMockup">article mockup project</h4>
+					</div>
+
+					<div class="modal-body">
+						<img src="img/mockup.jpg" alt="Mockup image" class="img-responsive image-margin" data-toggle="modal" data-target="#project1">
+						<p>This was my first project in this class. I re-formatted the article using the HTML and CSS learned at this point in the program. I used very basic formatting and styles as this project was early on in the program.</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Modal 2 -->
+		<div class="modal fade text-center" id="project2" tabindex="-1" role="dialog" aria-labelledby="AnimalTradingCard" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-capitalize" id="AnimalTradingCard">animal trading card project</h4>
+					</div>
+
+					<div class="modal-body">
+						<img src="img/cheetah.jpg" alt="Cheetah" class="img-responsive image-margin" data-toggle="modal" data-target="#project2">
+						<p>This was my second project in this class. This project was another mockup, but for an animal trading card. I included additional HTML and CSS learned, which included unordered lists and additional formatting.</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Modal 3 -->
+		<div class="modal fade text-center" id="project3" tabindex="-1" role="dialog" aria-labelledby="Appify" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-capitalize" id="Appify">appify project</h4>
+					</div>
+
+					<div class="modal-body">
+						<img src="img/appify.png" alt="Appify image" class="img-responsive image-margin" data-toggle="modal" data-target="#project1">
+						<p>This was my third project in this class. I learned a lot about HTML and CSS.</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
